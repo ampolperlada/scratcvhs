@@ -12,12 +12,8 @@ router.route("/").post(createContact);
 
 router.route("/:id").get();
 
-router.route("/:id").put((req,res) => {
-  res.status(200).json({message: `Update contact ${req.params.id}`});
-});
+router.route("/:id").put();
 
-router.route("/:id").delete((req,res) => {
-  res.status(200).json({message: `Delete contact for ${req.params.id}`});
-});
+router.route("/:id").delete();
 
 module.exports = router;

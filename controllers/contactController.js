@@ -21,4 +21,20 @@ const getContact = (req,res) => {
   res.status(200).json({message: `Get contact for ${req.params.id}`});
 }
 
-module.exports = { getContact, createContact };
+
+//@create Update contact
+//@route GET /api/contacts/:id
+//@access public
+const updateContact = (req,res) => {
+  res.status(200).json({message: `Update contact ${req.params.id}`});
+}
+
+//@create Delete contact
+//@route GET /api/contacts/:id
+//@access public
+const deleteContact = (req,res) => {
+  res.status(200).json({message: `Delete contact for ${req.params.id}`});
+}
+
+
+module.exports = { getContacts, createContacts, getContact, updateContact, deleteContact };
