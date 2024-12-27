@@ -2,15 +2,13 @@ const express = require("express");
 
 const router = express.Router();
 
-const {getContacts} = require ('../controllers/contactController');
-
-const {createContacts} = require ('../controllers/contactController');
-
-const {getContact} = require ('../controllers/contactController');
-
-const {updateContact} = require ('../controllers/contactController');
-
-const {deleteContact} = require ('../controllers/contactController');
+const {
+  getContacts,
+  createContacts,
+  getContact,
+  updateContact,
+  deleteContact
+} = require ('../controllers/contactController');
 
 
 
