@@ -12,6 +12,10 @@ const getContacts = (req,res) => {
 //@access public
 const createContacts = (req,res) => {
   console.log("The request body is " , req.body);
+  const {name, email, phone} = req.body;
+  if(!name || !email || !phone){
+    
+  }
   res.status(201).json({message: "Create Contact"});
 }
 
