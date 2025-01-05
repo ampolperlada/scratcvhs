@@ -1,9 +1,9 @@
 //@ampolperlada  @desc this is controller is for Contacts to get all data
-
+const asyncHandler = require("express-async-handler");
 //@getContact
 //@route GET /api/contacts
 //@access public
-const getContacts = (req,res) => {
+const getContacts = asyncHandler (req,res) => {
   res.status(200).json({message: "Get all contacts"});
 }
 
