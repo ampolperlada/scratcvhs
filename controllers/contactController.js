@@ -1,5 +1,6 @@
 //@ampolperlada  @desc this is controller is for Contacts to get all data
 const asyncHandler = require("express-async-handler");
+const Contact = require("../models/contactModel");
 //@getContact
 //@route GET /api/contacts
 //@access public
